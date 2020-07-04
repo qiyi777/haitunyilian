@@ -1,0 +1,243 @@
+/**index.wxss**/
+.bg-white {
+  background-color: #29CC55;
+}
+.nav-title-text {
+  color: #fff;
+  font-size: 32rpx;
+  margin-left: 4px;
+}
+.nav-title {
+  display: flex;
+  align-items: center;
+  padding-left: 24rpx;
+}
+.nav .back {
+  transform: translateY(1rpx);
+}
+.arrow-right {
+  transform: translateY(2rpx);
+  width: 16px;
+  height: 16px;
+}
+
+.page-body {
+  height: 176px;
+  /* padding: 0 24rpx; */
+}
+.hidden {
+  padding: 0 24rpx 60rpx;
+}
+.swiper-images {
+  width: 100%;
+  height: 176px;
+}
+.page-section {
+  height: 100%;
+}
+.swiper {
+  height: 100%;
+}
+.swiper .wx-swiper-dot {
+  width: 15rpx;
+  height: 8rpx;
+  background: white;
+  border-radius: 15rpx;
+}
+/* 选中指示点的样式 */
+.swiper .wx-swiper-dot.wx-swiper-dot-active {
+    width: 24rpx;
+    height: 8rpx;
+    background: #29CC55;
+    border-radius: 15rpx;
+}
+/* 上部分导航样式 */
+.container-navbar {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-navbar-item {
+  width: 20%;
+  text-align: center;
+  padding-top: 32rpx;
+}
+.navbar-item-img {
+  width: 80rpx;
+  height: 80rpx;
+}
+.navbar-item-text {
+  font-size: 28rpx;
+}
+
+/* tab切换的样式 */
+.tab {
+  padding-top: 52rpx;
+}
+.tab-title {
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+}
+.tab-title-item {
+  font-size: 28rpx;
+  color: #999999;
+  padding: 0 24rpx;
+}
+.tab-title-item.current {
+  position: relative;
+  color: #333;
+  font-size: 36rpx;
+}
+.tab-title-item-img {
+  position: absolute;
+  left: 50%;
+  bottom: -20rpx;
+  transform: translateX(-50%);
+  width: 120rpx;
+  height: 12rpx;
+}
+
+/* tab的内容 */
+.tab-item {
+  overflow: hidden;
+}
+.tab-item-list {
+  position: relative;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 0px 10px 0px rgba(0,0,0,0.05);
+  border-radius:8px;
+  overflow: hidden;
+  margin-top: 24rpx;
+}
+.tab-item-list-top-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  width: 168rpx;
+  height: 48rpx;
+}
+.tab-item-list-img {
+  width: 100%;
+  height: 296rpx;
+  object-fit: cover;
+  border-radius: 0 0 16rpx 16rpx;
+}
+.tab-item-list-content {
+  padding: 16rpx;
+}
+.tab-item-list-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab-item-list-top .text {
+  font-size: 32rpx;
+  color: #333333;
+}
+.tab-item-list-top .Score {
+  display: flex;
+  align-items: center;
+  color: #FFA800;
+  margin-right: 16rpx;
+}
+.tab-item-list-top .Score .number {
+  font-size: 36rpx;
+  margin-right: 4rpx;
+}
+.tab-item-list-top .Score .units {
+  font-size: 24rpx;
+}
+.tab-content-right {
+  display: flex;
+}
+.tab-content-right .pentagram-img{
+  width: 32rpx;
+  height: 32rpx;
+}
+.tab-item-list-center {
+  display: flex;
+  margin-top: 30rpx;
+  justify-content: space-between;
+}
+.center-box {
+  display: flex;
+}
+.center-box-img {
+  width: 36rpx;
+  height: 36rpx;
+}
+.center-text {
+  font-size: 24rpx;
+  color: #333333;
+}
+.center-right {
+  display: flex;
+  font-size: 24rpx;
+  color: #999999;
+}
+.center-right .number {
+  color: #333333;
+}
+.tab-item-list-botom {
+  display: flex;
+  margin-top: 16rpx;
+}
+.tab-bottom-item {
+  font-size: 20rpx;
+  color: #FFA800;
+  padding: 6rpx 16rpx;
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  border: 1px solid #FFA800;
+  margin-right: 20rpx;
+}
+
+
+/* 第二个 */
+.activity .Score {
+  margin-right: 0;
+}
+.activity .Score .number {
+  font-size: 24rpx;
+  color: #666666;
+  margin-right: 8rpx;
+} 
+.activity-top-img {
+  width: 152rpx;
+  height: 36rpx;
+}
+.tab-item-list-time {
+  display: flex;
+  margin-top: 20rpx;
+}
+.activity-time {
+  font-size: 24rpx;
+  margin-right: 8rpx;
+}
+.activity-num {
+  font-size: 24rpx;
+}
+.activity .tab-item-list-botom {
+  margin-top: 20rpx;
+  justify-content: space-between;
+}
+.activity .tab-item-list-botom .Deadline {
+  font-size: 28rpx;
+  color: #666666;
+}
+.activity .tab-item-list-botom .Deadline-time {
+  font-size: 28rpx;
+  color: #FA3E3E;
+}
+.activity .Deadline-box {
+  display: flex;
+}
+.activity .button {
+  height: 48rpx;
+  background-color: #29CC55;
+  line-height: 48rpx;
+  border-radius: 24rpx 24rpx 24rpx 24rpx;
+  font-size: 24rpx;
+  margin: 0;
+} 

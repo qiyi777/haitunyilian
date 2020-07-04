@@ -1,0 +1,286 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='nav bg-white' style='height:{{navH}}px'>
+      <view class='nav-title'>
+        <image src='../../static/images/postion.png' mode='aspectFit' class='back' bindtap='navBack'></image>
+        <view class="nav-title-text">九里亭小区</view>
+        <image class='arrow-right' src='../../static/images/arrow_left.png'></image>
+      </view>
+    </view>
+    <scroll-view class='bg-gray overflow' style='height:calc(100vh - {{navH}}px)' scroll-y >
+      <view class='hidden'>
+        <view class="container">
+         <!-- 轮播图部分 -->
+          <view class="page-body">
+            <view class="page-section page-section-spacing swiper">
+              <swiper class="swiper" indicator-dots="{{indicatorDots}}"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for="{{background}}" wx:key="*this">
+                  <swiper-item>
+                      <image class="swiper-images" src="{{item}}"></image>
+                  </swiper-item>
+                </block>
+              </swiper>
+            </view>
+          </view>
+          <!-- 页面上部导航 -->
+          <view class="container-navbar">
+            <view class="container-navbar-item">
+              <image class="navbar-item-img" src="/static/images/icon 1.png"></image>
+              <view class="navbar-item-text">托育</view>
+            </view>
+            <view class="container-navbar-item">
+              <image class="navbar-item-img" src="/static/images/icon 2.png"></image>
+              <view class="navbar-item-text">书法</view>
+            </view>
+            <view class="container-navbar-item">
+              <image class="navbar-item-img" src="/static/images/icon 3.png"></image>
+              <view class="navbar-item-text">口才</view>
+            </view>
+            <view class="container-navbar-item">
+              <image class="navbar-item-img" src="/static/images/icon 4.png"></image>
+              <view class="navbar-item-text">音乐</view>
+            </view>
+            <view class="container-navbar-item">
+              <image class="navbar-item-img" src="/static/images/icon 5.png"></image>
+              <view class="navbar-item-text">编程</view>
+            </view>
+            <view class="container-navbar-item">
+              <image class="navbar-item-img" src="/static/images/icon 6.png"></image>
+              <view class="navbar-item-text">素养</view>
+            </view>
+            <view class="container-navbar-item">
+              <image class="navbar-item-img" src="/static/images/icon 7.png"></image>
+              <view class="navbar-item-text">托育</view>
+            </view>
+            <view class="container-navbar-item">
+              <image class="navbar-item-img" src="/static/images/icon 8.png"></image>
+              <view class="navbar-item-text">钢琴</view>
+            </view>
+            <view class="container-navbar-item">
+              <image class="navbar-item-img" src="/static/images/icon 9.png"></image>
+              <view class="navbar-item-text">美术</view>
+            </view>
+            <view class="container-navbar-item">
+              <image class="navbar-item-img" src="/static/images/icon 10.png"></image>
+              <view class="navbar-item-text">托育</view>
+            </view>
+          </view>
+
+          <!-- tab切换 -->
+          <view class="tab">
+            <view class="tab-title">
+              <view class="tab-title-item current">
+                附近机构
+                <image class="tab-title-item-img" src="/static/images/title_bar_selected.png"></image>
+              </view>
+              <view class="tab-title-item">附近活动</view>
+              <view class="tab-title-item">联盟活动</view>
+              <view class="tab-title-item">周边生活</view>
+            </view>
+            <!-- 第一个 -->
+            <view class="tab-item" wx:if="{{false}}">
+              <view class="tab-item-list">
+                <image class="tab-item-list-top-img" src="/static/images/list.png">
+                </image>
+                <image class="tab-item-list-img" mode="aspectFill" src="/static/images/zidingy.jpg"></image>
+                <view class="tab-item-list-content">
+                  <view class="tab-item-list-top">
+                    <view class="text">海豚书法机构</view>
+                    <view class="tab-content-right">
+                      <view class="Score">
+                        <view class="number">4.9</view>
+                        <view class="units">分</view>
+                      </view>
+                      <view class="pentagram">
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                      </view>
+                    </view>
+                  </view>
+                  <view class="tab-item-list-center">
+                    <view class="center-box">
+                      <image class="center-box-img" src="/static/images/position1.png"></image>
+                      <view class="center-text">上海市松江区九亭镇沪松公路金地中心2楼</view>
+                    </view>
+                    <view class="center-right">
+                      <view>距您：</view><view class="number">920m</view>
+                    </view>
+                  </view>
+                  <view class="tab-item-list-botom">
+                    <view class="tab-bottom-item">师资强大</view>
+                    <view class="tab-bottom-item">师资强大</view>
+                    <view class="tab-bottom-item">师资强大</view>
+                    <view class="tab-bottom-item">师资强大</view>
+                  </view>
+                </view>
+              </view>
+              <view class="tab-item-list">
+                <image class="tab-item-list-top-img" src="/static/images/list.png">
+                </image>
+                <image class="tab-item-list-img" mode="aspectFill" src="/static/images/zidingy.jpg"></image>
+                <view class="tab-item-list-content">
+                  <view class="tab-item-list-top">
+                    <view class="text">海豚书法机构</view>
+                    <view class="tab-content-right">
+                      <view class="Score">
+                        <view class="number">4.9</view>
+                        <view class="units">分</view>
+                      </view>
+                      <view class="pentagram">
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                      </view>
+                    </view>
+                  </view>
+                  <view class="tab-item-list-center">
+                    <view class="center-box">
+                      <image class="center-box-img" src="/static/images/position1.png"></image>
+                      <view class="center-text">上海市松江区九亭镇沪松公路金地中心2楼</view>
+                    </view>
+                    <view class="center-right">
+                      <view>距您：</view><view class="number">920m</view>
+                    </view>
+                  </view>
+                  <view class="tab-item-list-botom">
+                    <view class="tab-bottom-item">师资强大</view>
+                    <view class="tab-bottom-item">师资强大</view>
+                    <view class="tab-bottom-item">师资强大</view>
+                    <view class="tab-bottom-item">师资强大</view>
+                  </view>
+                </view>
+              </view>
+              <view class="tab-item-list">
+                <image class="tab-item-list-top-img" src="/static/images/list.png">
+                </image>
+                <image class="tab-item-list-img" mode="aspectFill" src="/static/images/zidingy.jpg"></image>
+                <view class="tab-item-list-content">
+                  <view class="tab-item-list-top">
+                    <view class="text">海豚书法机构</view>
+                    <view class="tab-content-right">
+                      <view class="Score">
+                        <view class="number">4.9</view>
+                        <view class="units">分</view>
+                      </view>
+                      <view class="pentagram">
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                      </view>
+                    </view>
+                  </view>
+                  <view class="tab-item-list-center">
+                    <view class="center-box">
+                      <image class="center-box-img" src="/static/images/position1.png"></image>
+                      <view class="center-text">上海市松江区九亭镇沪松公路金地中心2楼</view>
+                    </view>
+                    <view class="center-right">
+                      <view>距您：</view><view class="number">920m</view>
+                    </view>
+                  </view>
+                  <view class="tab-item-list-botom">
+                    <view class="tab-bottom-item">师资强大</view>
+                    <view class="tab-bottom-item">师资强大</view>
+                    <view class="tab-bottom-item">师资强大</view>
+                    <view class="tab-bottom-item">师资强大</view>
+                  </view>
+                </view>
+              </view>
+              <view class="tab-item-list">
+                <image class="tab-item-list-top-img" src="/static/images/list.png">
+                </image>
+                <image class="tab-item-list-img" mode="aspectFill" src="/static/images/zidingy.jpg"></image>
+                <view class="tab-item-list-content">
+                  <view class="tab-item-list-top">
+                    <view class="text">海豚书法机构</view>
+                    <view class="tab-content-right">
+                      <view class="Score">
+                        <view class="number">4.9</view>
+                        <view class="units">分</view>
+                      </view>
+                      <view class="pentagram">
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                        <image class="pentagram-img" src="/static/images/pentagram.png"></image>
+                      </view>
+                    </view>
+                  </view>
+                  <view class="tab-item-list-center">
+                    <view class="center-box">
+                      <image class="center-box-img" src="/static/images/position1.png"></image>
+                      <view class="center-text">上海市松江区九亭镇沪松公路金地中心2楼</view>
+                    </view>
+                    <view class="center-right">
+                      <view>距您：</view><view class="number">920m</view>
+                    </view>
+                  </view>
+                  <view class="tab-item-list-botom">
+                    <view class="tab-bottom-item">师资强大</view>
+                    <view class="tab-bottom-item">师资强大</view>
+                    <view class="tab-bottom-item">师资强大</view>
+                    <view class="tab-bottom-item">师资强大</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <!-- 第二个 -->
+            <view class="tab-item activity">
+              <view class="tab-item-list">
+                <image class="tab-item-list-top-img" src="/static/images/list.png">
+                </image>
+                <image class="tab-item-list-img" mode="aspectFill" src="/static/images/zidingy.jpg"></image>
+                <view class="tab-item-list-content">
+                  <view class="tab-item-list-top">
+                    <view class="text">海豚亲子音乐会</view>
+                    <view class="tab-content-right">
+                      <view class="Score">
+                          <view class="number">海豚书法机构</view>
+                          <image class="activity-top-img" src="/static/images/renzhen.png"></image>
+                      </view>
+                    </view>
+                  </view>
+                  <view class="tab-item-list-center">
+                    <view class="center-box">
+                      <image class="center-box-img" src="/static/images/position1.png"></image>
+                      <view class="center-text">年龄段：2-6岁</view>
+                    </view>
+                    <view class="center-box">
+                      <image class="center-box-img" src="/static/images/position1.png"></image>
+                      <view class="center-text">营业时间：9:00-18:00</view>
+                    </view>
+                    <view class="center-right">
+                      <view>距您：</view><view class="number">920m</view>
+                    </view>
+                  </view>
+                  <view class="tab-item-list-time">
+                    <view class="activity-time">活动时间：6月19日-6月20日</view>
+                    <view class="activity-num">活动人数：20人</view>
+                  </view>
+                  <view class="tab-item-list-botom">
+                    <view class="Deadline-box">
+                      <view class="Deadline"> 报名截止：</view>
+                      <view class="Deadline-time">
+                        1 天 12 小时 30 分
+                      </view>
+                    </view>
+                    <button class="button" type="primary" size="mini">立即查看</button>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+
+</view>
